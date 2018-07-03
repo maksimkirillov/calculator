@@ -21,6 +21,13 @@ namespace Calculator
             double firstValue = Convert.ToDouble(firstValuetext);
             string secondValuetext = textBox2.Text;
             double secondValue = Convert.ToDouble(secondValuetext);
+
+   
+            string caluclateName = ((Button)sender).Name;
+            ICalculateTwoArguments calculator = CalculatorTwoFactory.CreateCalculator(caluclateName);
+            double result = calculator.Calculator(firstValue, secondValue);
+            textBox3.Text = result.ToString();
+            /*
             switch (((Button)sender).Name)
             {
                 case "addition":
@@ -43,7 +50,7 @@ namespace Calculator
                     break;
                 default:
                     throw new Exception("Неизвестная операция");
-            }
+            }*/
         }
     }
 }
