@@ -15,5 +15,15 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string firstValuetext = textBox1.Text; 
+            double firstValue = Convert.ToDouble(firstValuetext);
+            string secondValuetext = textBox2.Text;
+            double secondValue = Convert.ToDouble(secondValuetext);
+            double result = secondValue + firstValue;
+            textBox3.Text = result.ToString();
+        }
     }
 }
