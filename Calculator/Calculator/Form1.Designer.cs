@@ -115,6 +115,7 @@
             this.Cos.TabIndex = 8;
             this.Cos.Text = "Cos";
             this.Cos.UseVisualStyleBackColor = true;
+            this.Cos.Click += new System.EventHandler(this.Click1);
             // 
             // Tg
             // 
@@ -124,6 +125,7 @@
             this.Tg.TabIndex = 9;
             this.Tg.Text = "Tg";
             this.Tg.UseVisualStyleBackColor = true;
+            this.Tg.Click += new System.EventHandler(this.Click1);
             // 
             // Sin
             // 
@@ -143,6 +145,7 @@
             this.Log.TabIndex = 11;
             this.Log.Text = "Log";
             this.Log.UseVisualStyleBackColor = true;
+            this.Log.Click += new System.EventHandler(this.Click1);
             // 
             // Log10
             // 
@@ -152,6 +155,7 @@
             this.Log10.TabIndex = 12;
             this.Log10.Text = "Log10";
             this.Log10.UseVisualStyleBackColor = true;
+            this.Log10.Click += new System.EventHandler(this.Click1);
             // 
             // Sqrt
             // 
@@ -161,6 +165,7 @@
             this.Sqrt.TabIndex = 13;
             this.Sqrt.Text = "Sqrt";
             this.Sqrt.UseVisualStyleBackColor = true;
+            this.Sqrt.Click += new System.EventHandler(this.Click1);
             // 
             // Abs
             // 
@@ -170,6 +175,7 @@
             this.Abs.TabIndex = 14;
             this.Abs.Text = "Abs";
             this.Abs.UseVisualStyleBackColor = true;
+            this.Abs.Click += new System.EventHandler(this.Click1);
             // 
             // Square
             // 
@@ -179,6 +185,7 @@
             this.Square.TabIndex = 15;
             this.Square.Text = "Square";
             this.Square.UseVisualStyleBackColor = true;
+            this.Square.Click += new System.EventHandler(this.Click1);
             // 
             // Cube
             // 
@@ -188,6 +195,7 @@
             this.Cube.TabIndex = 16;
             this.Cube.Text = "Cube";
             this.Cube.UseVisualStyleBackColor = true;
+            this.Cube.Click += new System.EventHandler(this.Click1);
             // 
             // calc
             // 
