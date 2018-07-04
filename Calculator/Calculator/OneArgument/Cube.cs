@@ -1,7 +1,7 @@
 ﻿
 namespace Calculator
 {
-    class Cube : ICalculatorOneArgument
+   public class Cube : ICalculatorOneArgument
     {
         public double Calculator(double firstArgument)
         {

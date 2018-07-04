@@ -11,14 +11,12 @@ namespace Calculator.Test
         [TestFixture]
         public class sin
         {
-            [TestCase(5,-0.95)]
-            [TestCase(25,25)]
-            [TestCase(0,0)]
+            [TestCase(15, 0.650)]
             public void CalculateTest(double firstValue, double expected)
             {
                 var calculator = new Sin();
                 var actualResult = calculator.Calculator(firstValue);
-                Assert.AreEqual(0, actualResult,0.01);
+                Assert.AreEqual(0.650, actualResult,0.001);
             }
         }
     }

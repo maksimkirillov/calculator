@@ -2,11 +2,11 @@
 
 namespace Calculator
 {
-    class CalculatorOneFactory
+    public class CalculatorOneFactory
     {
-        public static ICalculatorOneArgument CreateCalculator(string calculatorName)
+        public static ICalculatorOneArgument CreateCalculator(string calculator1Name)
         {
-            switch (calculatorName)
+            switch (calculator1Name)
             {
                 case "Sin":
                     return new Sin();

@@ -6,17 +6,17 @@ using NUnit.Framework;
 
 namespace Calculator.Test
 {
-    class CosTest
+    class SquareTest
     {
         [TestFixture]
-        public class cos
+        public class square
         {
-            [TestCase(14, 0.136)]
+            [TestCase(9, 81)]
             public void CalculateTest(double firstValue, double expected)
             {
-                var calculator = new Cos();
+                var calculator = new Square();
                 var actualResult = calculator.Calculator(firstValue);
-                Assert.AreEqual(0.136, actualResult,0.001);
+                Assert.AreEqual(81, actualResult);
             }
         }
     }
