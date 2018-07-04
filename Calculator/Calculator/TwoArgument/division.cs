@@ -1,7 +1,7 @@
 ﻿
 namespace Calculator
 {
-    class division: ICalculateTwoArguments
+    public class division: ICalculateTwoArguments
     {
         public double Calculator(double firstArgument, double secondArgument)
         {

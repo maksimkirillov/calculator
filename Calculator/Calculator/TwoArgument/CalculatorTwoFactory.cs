@@ -2,7 +2,7 @@
 
 namespace Calculator
 {
-    class CalculatorTwoFactory
+    public class CalculatorTwoFactory
     {
         public static ICalculateTwoArguments CreateCalculator(string calculatorName)
         {
