@@ -1,7 +1,7 @@
 ﻿
 namespace Calculator
 {
-    class Log10 : ICalculatorOneArgument
+   public class Log10 : ICalculatorOneArgument
     {
         public double Calculator(double firstArgument)
         {
