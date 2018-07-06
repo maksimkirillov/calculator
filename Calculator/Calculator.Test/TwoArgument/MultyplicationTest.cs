@@ -4,10 +4,9 @@ using NUnit.Framework;
 
 namespace Calculator.Test.TwoArgument
 {
-    class MultyplicationTest
-    {
+
         [TestFixture]
-        public class multyplicationTest
+        public class MultyplicationTest
         {
             [TestCase(5, 5, 25)]
             [TestCase(25, 1, 25)]
@@ -19,5 +18,5 @@ namespace Calculator.Test.TwoArgument
                 Assert.AreEqual(25, actualResult);
             }
         }
-    }
+    
 }

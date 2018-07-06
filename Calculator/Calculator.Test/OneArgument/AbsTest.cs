@@ -4,11 +4,10 @@ using NUnit.Framework;
 
 namespace Calculator.Test.OneArgument
 {
+    [TestFixture]
     class AbsTest
     {
-        [TestFixture]
-        public class abs
-        {
+
             [TestCase(-5, 5)]
             [TestCase(-15, 15)]
             [TestCase(-55, 55)]
@@ -18,6 +17,5 @@ namespace Calculator.Test.OneArgument
                 double result = calculator.Calculator(firstValue);
                 Assert.AreEqual(expected, result);
             }
-        }
     }
 }

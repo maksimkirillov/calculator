@@ -6,8 +6,8 @@ namespace Calculator.OneArgument
      /// Interface for a function of one argument
      /// </summary>
      /// take Argument
-     /// <param name="OneArgument"></param>
+     /// <param name="oneArgument"></param>
      /// <returns></returns>
-        double Calculator(double OneArgument);
+        double Calculator(double oneArgument);
     }
 }

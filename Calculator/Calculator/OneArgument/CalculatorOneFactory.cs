@@ -11,9 +11,9 @@ namespace Calculator.OneArgument
         /// <returns> 
         /// Return incstanse of class 
         /// </returns>
-        public static ICalculatorOneArgument CreateCalculator(string calculator1Name)
+        public static ICalculatorOneArgument CreateCalculator(string calculatorName)
         {
-            switch (calculator1Name)
+            switch (calculatorName)
             {
                 case "Sin":
                     return new Sin();

@@ -4,10 +4,9 @@ using NUnit.Framework;
 
 namespace Calculator.Test.TwoArgument
 {
-    class DivisionTest
-    {
+
         [TestFixture]
-        public class divisionTest
+        public class DivisionTest
         {
             [TestCase(25, 5, 5)]
             [TestCase(50, 10, 5)]
@@ -19,12 +18,12 @@ namespace Calculator.Test.TwoArgument
             }
 
             [Test]
-            public void divisionexeptiontest()
+            public void DivisionExeptionTest()
             {
                 ICalculateTwoArguments calculator = CalculatorTwoFactory.CreateCalculator("division");
                 Assert.Throws<Exception>(() => calculator.Calculator(5,0));
             }
         }
-    }
+    
 }
 

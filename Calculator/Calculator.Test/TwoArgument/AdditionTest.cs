@@ -3,10 +3,9 @@ using NUnit.Framework;
 
 namespace Calculator.Test.TwoArgument
 {
-    class AdditionTest
-    {
+
         [TestFixture]
-        public class additionTest
+        public class AdditionTest
         {
             [TestCase(0, 7, 7)]
             [TestCase(3, 4, 7)]
@@ -19,6 +18,6 @@ namespace Calculator.Test.TwoArgument
             }
 
         }
-    }
+    
 }
 

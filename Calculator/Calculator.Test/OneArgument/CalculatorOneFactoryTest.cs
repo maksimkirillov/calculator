@@ -6,15 +6,15 @@ namespace Calculator.Test.OneArgument
 {
     public class CalculatorOneFactoryTest
     {
-        [TestCase("Cos", typeof(Cos))]
-        [TestCase("Sin", typeof(Sin))]
-        [TestCase("Sqrt", typeof(Sqrt))]
+        [TestCase("Cos", typeof(Calculator.OneArgument.Cos))]
+        [TestCase("Sin", typeof(Calculator.OneArgument.Sin))]
+        [TestCase("Sqrt", typeof(Calculator.OneArgument.Sqrt))]
         [TestCase("Abs", typeof(Abs))]
-        [TestCase("Log", typeof(Log))]
-        [TestCase("Log10", typeof(Log10))]
-        [TestCase("Tg", typeof(Tg))]
-        [TestCase("Square", typeof(Square))]
-        [TestCase("Cube", typeof(Cube))]
+        [TestCase("Log", typeof(Calculator.OneArgument.Log))]
+        [TestCase("Log10", typeof(Calculator.OneArgument.Log10))]
+        [TestCase("Tg", typeof(Calculator.OneArgument.Tg))]
+        [TestCase("Square", typeof(Calculator.OneArgument.Square))]
+        [TestCase("Cube", typeof(Calculator.OneArgument.Cube))]
         public void CalculattorTest(string name, Type type)
         {
             var calculator = CalculatorOneFactory.CreateCalculator(name);

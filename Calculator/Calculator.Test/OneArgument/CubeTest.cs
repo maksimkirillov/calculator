@@ -4,20 +4,19 @@ using NUnit.Framework;
 
 namespace Calculator.Test.OneArgument
 {
-    class CubeTest
-    {
+
         [TestFixture]
-        public class cube
+        public class Cube
         {
             [TestCase(3, 27)]
             [TestCase(2, 8)]
             [TestCase(1, 1)]
             public void CalculateTest(double firstValue, double expected)
             {
-                var calculator = new Cube();
+                var calculator = new Calculator.OneArgument.Cube();
                 double result = calculator.Calculator(firstValue);
                 Assert.AreEqual(expected, result);
             }
         }
-    }
+    
 }

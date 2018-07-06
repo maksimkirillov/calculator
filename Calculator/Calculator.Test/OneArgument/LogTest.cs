@@ -4,17 +4,16 @@ using NUnit.Framework;
 
 namespace Calculator.Test.OneArgument
 {
-    class LogTest
-    {
+
         [TestFixture]
-        public class log
+        public class Log
         {
             [TestCase(76, 4.330)]
             [TestCase(12, 0.670)]
             [TestCase(19, 0.306)]
             public void CalculateTest(double firstValue, double expected)
             {
-                var calculator = new Log();
+                var calculator = new Calculator.OneArgument.Log();
                 var actualResult = calculator.Calculator(firstValue);
                 double result = calculator.Calculator(firstValue);
                 Assert.AreEqual(expected, result, 0.001);
@@ -26,5 +25,5 @@ namespace Calculator.Test.OneArgument
                 Assert.Throws<Exception>(() => calculator.Calculator(-187));
             }
         }
-    }
+    
 }

@@ -4,10 +4,9 @@ using NUnit.Framework;
 
 namespace Calculator.Test.TwoArgument
 {
-    class SubtractionTest
-    {
+
         [TestFixture]
-        public class subtractionTest
+        public class SubtractionTest
         {
             [TestCase(5, 5, 0)]
             [TestCase(25, 25, 25)]
@@ -19,5 +18,5 @@ namespace Calculator.Test.TwoArgument
                 Assert.AreEqual(0, actualResult);
             }
         }
-    }
+    
 }
