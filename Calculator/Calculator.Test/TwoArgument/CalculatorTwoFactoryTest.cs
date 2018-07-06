@@ -1,14 +1,15 @@
-﻿using NUnit.Framework;
-using System;
+﻿using System;
+using Calculator.TwoArgument;
+using NUnit.Framework;
 
-namespace Calculator.Test
+namespace Calculator.Test.TwoArgument
 {
     public class CalculatorTwoFactoryTest
     {
-        [TestCase("addition", typeof(addition))]
-        [TestCase("sabtraction", typeof(sabtraction))]
-        [TestCase("multyplication", typeof(multyplication))]
-        [TestCase("division", typeof(division))]
+        [TestCase("addition", typeof(Addition))]
+        [TestCase("sabtraction", typeof(Sabtraction))]
+        [TestCase("multyplication", typeof(Multyplication))]
+        [TestCase("division", typeof(Division))]
 
         public void CalculattorTest(string name, Type type)
         {

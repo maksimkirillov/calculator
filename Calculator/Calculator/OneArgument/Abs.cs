@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace Calculator.OneArgument
 {
    public  class Abs : ICalculatorOneArgument
     {

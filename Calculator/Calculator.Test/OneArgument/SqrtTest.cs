@@ -1,7 +1,8 @@
 ﻿using System;
+using Calculator.OneArgument;
 using NUnit.Framework;
 
-namespace Calculator.Test
+namespace Calculator.Test.OneArgument
 {
     class SqerTest
     {
@@ -9,11 +10,13 @@ namespace Calculator.Test
         public class sqrt
         {
             [TestCase(25, 5)]
+            [TestCase(9, 3)]
+            [TestCase(81, 9)]
             public void CalculateTest(double firstValue, double expected)
             {
                 var calculator = new Sqrt();
-                var actualResult = calculator.Calculator(firstValue);
-                Assert.AreEqual(5, actualResult);
+                double result = calculator.Calculator(firstValue);
+                Assert.AreEqual(expected, result);
             }
             [Test]
             public void sqrtexeptiontest()

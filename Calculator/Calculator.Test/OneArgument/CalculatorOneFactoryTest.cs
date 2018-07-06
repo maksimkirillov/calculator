@@ -1,7 +1,8 @@
-﻿using NUnit.Framework;
-using System;
+﻿using System;
+using Calculator.OneArgument;
+using NUnit.Framework;
 
-namespace Calculator.Test
+namespace Calculator.Test.OneArgument
 {
     public class CalculatorOneFactoryTest
     {

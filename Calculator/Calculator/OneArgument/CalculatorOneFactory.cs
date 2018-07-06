@@ -1,8 +1,7 @@
 ﻿using System;
-
-namespace Calculator
+namespace Calculator.OneArgument
 {
-    public class CalculatorOneFactory
+    public static class CalculatorOneFactory
     {/// <summary> 
         /// Fabrica for function of one variables 
         /// </summary> 

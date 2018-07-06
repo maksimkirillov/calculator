@@ -1,5 +1,5 @@
 ﻿
-namespace Calculator
+namespace Calculator.OneArgument
 {
     public class Square : ICalculatorOneArgument
     {/// <summary>

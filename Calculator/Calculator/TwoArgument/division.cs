@@ -1,9 +1,10 @@
 ﻿
 using System;
+using Calculator.TwoArgument;
 
 namespace Calculator
 {
-    public class division: ICalculateTwoArguments
+    public class Division: ICalculateTwoArguments
     {/// <summary>
     /// Calculate function division
     /// </summary>

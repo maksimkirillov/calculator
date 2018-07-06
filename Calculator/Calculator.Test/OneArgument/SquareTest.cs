@@ -1,7 +1,8 @@
 ﻿
+using Calculator.OneArgument;
 using NUnit.Framework;
 
-namespace Calculator.Test
+namespace Calculator.Test.OneArgument
 {
     class SquareTest
     {
@@ -9,11 +10,13 @@ namespace Calculator.Test
         public class square
         {
             [TestCase(9, 81)]
+            [TestCase(3, 9)]
+            [TestCase(5, 25)]
             public void CalculateTest(double firstValue, double expected)
             {
                 var calculator = new Square();
-                var actualResult = calculator.Calculator(firstValue);
-                Assert.AreEqual(81, actualResult);
+                double result = calculator.Calculator(firstValue);
+                Assert.AreEqual(expected, result);
             }
         }
     }

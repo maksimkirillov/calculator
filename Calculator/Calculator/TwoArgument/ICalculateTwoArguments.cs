@@ -1,5 +1,5 @@
 ﻿
-namespace Calculator
+namespace Calculator.TwoArgument
 {
    public interface ICalculateTwoArguments
     {/// <summary>

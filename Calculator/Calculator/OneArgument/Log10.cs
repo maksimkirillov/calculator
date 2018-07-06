@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace Calculator
+namespace Calculator.OneArgument
 {
    public class Log10 : ICalculatorOneArgument
     {/// <summary>

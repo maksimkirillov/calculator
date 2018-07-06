@@ -1,7 +1,7 @@
 ﻿
-namespace Calculator
+namespace Calculator.TwoArgument
 {
-    public class sabtraction : ICalculateTwoArguments
+    public class Sabtraction : ICalculateTwoArguments
     {/// <summary>
      /// Calculate function sabtraction
      /// </summary>

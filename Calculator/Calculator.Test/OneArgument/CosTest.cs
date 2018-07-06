@@ -1,7 +1,8 @@
 ﻿
+using Calculator.OneArgument;
 using NUnit.Framework;
 
-namespace Calculator.Test
+namespace Calculator.Test.OneArgument
 {
     class CosTest
     {
@@ -9,11 +10,13 @@ namespace Calculator.Test
         public class cos
         {
             [TestCase(14, 0.136)]
+            [TestCase(1, 8.414)]
+            [TestCase(3, 0.141)]
             public void CalculateTest(double firstValue, double expected)
             {
                 var calculator = new Cos();
-                var actualResult = calculator.Calculator(firstValue);
-                Assert.AreEqual(0.136, actualResult,0.001);
+                double result = calculator.Calculator(firstValue);
+                Assert.AreEqual(expected, result,0.001);
             }
         }
     }

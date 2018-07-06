@@ -1,7 +1,8 @@
 ﻿
+using Calculator.TwoArgument;
 using NUnit.Framework;
 
-namespace Calculator.Test
+namespace Calculator.Test.TwoArgument
 {
     class SubtractionTest
     {
@@ -13,7 +14,7 @@ namespace Calculator.Test
             [TestCase(0, 0, 0)]
             public void CalculateTest(double firstValue, double secondValue, double expected)
             {
-                var calculator = new sabtraction();
+                var calculator = new Sabtraction();
                 var actualResult = calculator.Calculator(firstValue, secondValue);
                 Assert.AreEqual(0, actualResult);
             }

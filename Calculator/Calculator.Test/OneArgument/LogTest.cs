@@ -1,7 +1,8 @@
 ﻿using System;
+using Calculator.OneArgument;
 using NUnit.Framework;
 
-namespace Calculator.Test
+namespace Calculator.Test.OneArgument
 {
     class LogTest
     {
@@ -9,11 +10,14 @@ namespace Calculator.Test
         public class log
         {
             [TestCase(76, 4.330)]
+            [TestCase(12, 0.670)]
+            [TestCase(19, 0.306)]
             public void CalculateTest(double firstValue, double expected)
             {
                 var calculator = new Log();
                 var actualResult = calculator.Calculator(firstValue);
-                Assert.AreEqual(4.330, actualResult, 0.001);
+                double result = calculator.Calculator(firstValue);
+                Assert.AreEqual(expected, result, 0.001);
             }
             [Test]
             public void log10exeptiontest()

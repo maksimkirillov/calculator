@@ -1,7 +1,8 @@
 ﻿
+using Calculator.TwoArgument;
 using NUnit.Framework;
 
-namespace Calculator.Test
+namespace Calculator.Test.TwoArgument
 {
     class MultyplicationTest
     {
@@ -13,7 +14,7 @@ namespace Calculator.Test
             [TestCase(50, 0.5, 25)]
             public void CalculateTest(double firstValue, double secondValue, double expected)
             {
-                var calculator = new multyplication();
+                var calculator = new Multyplication();
                 var actualResult = calculator.Calculator(firstValue, secondValue);
                 Assert.AreEqual(25, actualResult);
             }

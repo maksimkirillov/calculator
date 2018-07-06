@@ -1,6 +1,7 @@
-﻿using NUnit.Framework;
+﻿using Calculator.TwoArgument;
+using NUnit.Framework;
 
-namespace Calculator.Test
+namespace Calculator.Test.TwoArgument
 {
     class AdditionTest
     {
@@ -12,7 +13,7 @@ namespace Calculator.Test
             [TestCase(6, 1, 7)]
             public void CalculateTest(double firstValue, double secondValue, double expected)
             {
-                var calculator = new addition();
+                var calculator = new Addition();
                 var actualResult = calculator.Calculator(firstValue, secondValue);
                 Assert.AreEqual(7, actualResult);
             }

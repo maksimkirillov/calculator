@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Calculator
+namespace Calculator.TwoArgument
 {
-    public class CalculatorTwoFactory
+    public static class CalculatorTwoFactory
     {/// <summary> 
         /// Fabrica for function of two variables 
         /// </summary> 
@@ -17,13 +17,13 @@ namespace Calculator
             switch (calculatorName)
             {
                 case "addition":
-                    return new addition();
+                    return new Addition();
                 case "sabtraction":
-                    return new sabtraction();
+                    return new Sabtraction();
                 case "multyplication":
-                    return new multyplication();
+                    return new Multyplication();
                 case "division":
-                    return new division();
+                    return new Division();
                 default:
                     throw new Exception("Неизвестная операция");
             }

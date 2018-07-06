@@ -1,7 +1,7 @@
 ﻿
-namespace Calculator
+namespace Calculator.TwoArgument
 {
-    public class multyplication: ICalculateTwoArguments
+    public class Multyplication: ICalculateTwoArguments
     {/// <summary>
      /// Calculate function multyplication
      /// </summary>

@@ -1,7 +1,8 @@
 ﻿
+using Calculator.OneArgument;
 using NUnit.Framework;
 
-namespace Calculator.Test
+namespace Calculator.Test.OneArgument
 {
     class SinTest
     {
@@ -9,11 +10,13 @@ namespace Calculator.Test
         public class sin
         {
             [TestCase(15, 0.650)]
+            [TestCase(1, 0.540)]
+            [TestCase(6, 0.960)]
             public void CalculateTest(double firstValue, double expected)
             {
                 var calculator = new Sin();
-                var actualResult = calculator.Calculator(firstValue);
-                Assert.AreEqual(0.650, actualResult,0.001);
+                double result = calculator.Calculator(firstValue);
+                Assert.AreEqual(expected, result, 0.001);
             }
         }
     }
